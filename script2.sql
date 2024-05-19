@@ -3,5 +3,6 @@ create table homework.ORDERS (
                                  date timestamptz,
                                  customer_id int,
                                  product_name varchar,
-                                 amount int
+                                 amount int,
+                                 foreign key (customer_id) references homework.customers(id)
 );
